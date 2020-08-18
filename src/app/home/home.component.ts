@@ -8,15 +8,16 @@ import { DataService} from '../data.service'
 })
 export class HomeComponent implements OnInit {
 
-  h1Style: boolean = false;
+  
   // defaultProfilePic: string ='./Rran7DFz-bU.jpg';
 
   constructor(private data: DataService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    // this.data.getUsers().subscribe(data => {
+    //   this.users = data
+    //   console.log(this.users)
+    // })
   }
 
-  firstClick() {
-    this.data.firstClick();
-  }
 }
