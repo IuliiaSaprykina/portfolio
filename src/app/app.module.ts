@@ -1,5 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { HttpClientModule } from '@angular/common/http';
 import { EmbedVideo } from 'ngx-embed-video';
 
@@ -20,15 +22,18 @@ import { ImagePreloadDirective } from './image-preload.directive';
     ContactComponent,
     HomeComponent,
     ProjectsComponent,
-    ImagePreloadDirective
+    ImagePreloadDirective,
   ],
   imports: [
     HttpClientModule, EmbedVideo.forRoot(),
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,    // <-- Right here
+    HttpClientModule,
+    NgxYoutubePlayerModule.forRoot(),    
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+

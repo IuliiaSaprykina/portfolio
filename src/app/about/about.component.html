@@ -1,20 +1,21 @@
-<h1>About me</h1>
-
-<p>
-    I’m a Software Engineer with a mechanical engineering background.
-    Before the software engineering I worked in the production of stadiums and unique buildings around the world.
-    I have over 5 years of experience in this field. I also have a master's degree in mechanical engineering and know almost everything about metal cutting processes.
-</p>
-
-<p>
-    I would like to share my biggest mechanical engineering projects, which I am proud of.
-</p>
-
-
-<h3>Volgograd Arena</h3>
-<div class="volga-arena">
-            <!-- <img class="volga-photo" src="../../assets/beamsBeforeMill.JPG" width="350"/> -->
-            <img class="volga-photo" src="../../assets/BeamAfterMill.JPG" width="350"/>
+<div>
+    <h1>About me</h1>
+    
+    <p>
+        I’m a Software Engineer with a mechanical engineering background.
+        Before the software engineering I worked in the production of stadiums and unique buildings around the world.
+        I have over 5 years of experience in this field. I also have a master's degree in mechanical engineering and know almost everything about metal cutting processes.
+    </p>
+    
+    <p>
+        I would like to share my biggest mechanical engineering projects, which I am proud of.
+    </p>
+    
+    
+    <h3>Volgograd Arena</h3>
+    <div class="volga-arena">
+        <!-- <img class="volga-photo" src="../../assets/beamsBeforeMill.JPG" width="350"/> -->
+        <img class="volga-photo" src="../../assets/BeamAfterMill.JPG" width="350"/>
         <div class="volga-text">
             <p>
                 Volgograd Arena is a stadium for the 2018 local football championship in Russia.
@@ -22,15 +23,26 @@
                 The most difficult in terms of machining were the beams of the compression ring, which served as a support for the unique cable-stayed roof of the stadium.
                 The complexity of these beams was in the high quality requirements, namely, the tolerance for the length was 16000 0/+1 mm and the tolerance for the angle of the processed surface to the beam axis was &#177;0.25&#176;.
                 During production, a virtual assembly of these beams was also made in order to identify the actual dimensions of the ring.
-                As a result, all the beams were assembled during the installation of the object without a single problem
+                As a result, all the beams were assembled during the installation of the object without a single problem.
             </p>
         </div>
-            <img class="volga-photo-last" src="../../assets/Volgograd.png" height="350"/>
-</div>
-<h3>My Masters project</h3>
-<div class="masters-project">
-    <div *ngFor='let item of videoList'>
-        <a href='about/{{ item.slug }}'>{{ item.name }} </a>
-        {{ item.embred }}
+        <img class="volga-photo-last" src="../../assets/Volgograd.png" height="350"/>
+    </div>
+    <h3>My Master degree project</h3>
+    <div class="masters-project">
+        <div class="masters-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vgeYZqQMiCk?playlist=vgeYZqQMiCk&loop=1&autoplay=1&mute=1” " frameborder="0" allow=autoplay allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="masters-text">
+            <p>
+                I worked on my master's project for 1.5 years. There was a big project for the production of a differential carrier.
+                During this project, the following main goals were achieved: <br>
+                    1. Developed technological documentation for the "Left differential carrier" allows to reduce the time for preparation of production by 30%. <br>
+                    2. The developed CNC program in software NX10 Siemens with the help of visualization of the mechanical process eliminates the possibility of collision between the tool and the workpiece during machining. 
+                    During the development this CNC program the iMachinning principle was applied. 
+                    iMachining allows generate CNC programs that will adhere to the principles of HSM (high speed machining), enabling much shorter machining time, longer tool life.<br>
+                Here is the visualization of machanical process.
+            </p>
+        </div>
     </div>
 </div>
