@@ -16,7 +16,21 @@ body {
 
 
 .volga-text{
-    
     display: inline;
 }
 
+.masters-project{
+    border: 3px solid blue;
+    padding: 20px 40px 40px;
+    min-width: 30%;
+}
+
+.masters-video{
+    min-width: 350px;
+    margin-right: 10%;
+    float: left;
+}
+
+.masters-text{
+    display: inline;
+}

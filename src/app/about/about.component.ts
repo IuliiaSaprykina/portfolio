@@ -1,25 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { EmbedVideoService } from 'ngx-embed-video';
+
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css'],
-
+  template: '<youtube-player videoId="PRQCAL_RMVo"></youtube-player>',
 })
 export class AboutComponent implements OnInit {
-  title = "Video List"
-  videoList = [
-    {
-      name: "Item 1",
-      slug: "item-1",
-      embed: `<iframe width="560" height="315" src="https://www.youtube.com/embed/vgeYZqQMiCk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
-    }
-  ]
-  
-  constructor() { }
+  ngOnInit() {
+    // This code loads the IFrame Player API code asynchronously, according to the instructions at
+    // https://developers.google.com/youtube/iframe_api_reference#Getting_Started
+    const tag = document.createElement('script');
 
-  ngOnInit(): void {
+    tag.src = "https://www.youtube.com/watch?v=vgeYZqQMiCk";
+    document.body.appendChild(tag);
   }
-
 }
