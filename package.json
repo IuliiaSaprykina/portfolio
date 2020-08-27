@@ -25,6 +25,7 @@
     "hammerjs": "^2.0.8",
     "ngx-embed-video": "^1.0.4",
     "ngx-youtube-player": "^9.1.0",
+    "postcss-import": "^12.0.1",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "videogular": "^2.2.1",
